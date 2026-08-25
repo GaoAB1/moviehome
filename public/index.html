@@ -1,1 +1,42 @@
-__PUBLIC_INDEX_CONTENT__
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0b0f" />
+    <title>MovieHome · 影视聚合</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="topbar">
+      <div class="nav-shell">
+        <button class="brand" data-page="home" aria-label="返回首页">
+          <span class="brand-mark"><i class="ri-play-fill"></i></span>
+          <span>MovieHome</span>
+        </button>
+        <nav class="main-nav" aria-label="主导航">
+          <button class="nav-link active" data-page="home"><i class="ri-home-5-line"></i> 首页</button>
+          <button class="nav-link" data-page="watchlist"><i class="ri-bookmark-3-line"></i> 追剧</button>
+          <button class="nav-link" data-page="discover"><i class="ri-compass-3-line"></i> 发现</button>
+          <button class="nav-link" id="adminNav" data-page="admin" style="display:none"><i class="ri-admin-line"></i> 管理</button>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-button" id="themeToggle" aria-label="切换主题"><i class="ri-sun-line"></i></button>
+          <button class="avatar-button" id="accountButton" aria-label="账户中心">林</button>
+        </div>
+      </div>
+    </header>
+    <main id="app" class="page-shell"></main>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+      <section class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+        <button class="modal-close icon-button" id="modalClose" aria-label="关闭详情"><i class="ri-close-line"></i></button>
+        <div id="detailContent"></div>
+      </section>
+    </div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
