@@ -11,7 +11,7 @@ let setupRequired = false;
 const demoPoster = 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=700&q=85';
 const poster = item => item.poster || demoPoster;
 const progressPercent = item => Math.round((Number(item.progress || 0) / Math.max(Number(item.total || 1), 1)) * 100);
-const esc = value => String(value ?? '').replace(/[&<>\'\"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
+const esc = value => String(value ?? '').replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 
 async function getJSON(url, options) {
   const response = await fetch(url, { credentials: 'same-origin', ...options });
