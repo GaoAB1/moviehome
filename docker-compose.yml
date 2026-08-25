@@ -1,0 +1,19 @@
+services:
+  moviehome:
+    build: .
+    container_name: moviehome
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DATA_DIR: /app/data
+      TMDB_API_KEY: ${TMDB_API_KEY:-}
+      TMDB_LANGUAGE: ${TMDB_LANGUAGE:-zh-CN}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      PASSWORD_PEPPER: ${PASSWORD_PEPPER:-change-this-in-production}
+    volumes:
+      - moviehome_data:/app/data
+
+volumes:
+  moviehome_data:

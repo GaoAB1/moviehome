@@ -1,0 +1,1 @@
+__PUBLIC_APP_CONTENT__

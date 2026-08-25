@@ -1,0 +1,41 @@
+[
+  {
+    "id": 872585,
+    "mediaType": "movie",
+    "title": "奥本海默",
+    "originalTitle": "Oppenheimer",
+    "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+    "year": "2023",
+    "progress": 1,
+    "total": 1,
+    "genres": ["剧情", "历史"],
+    "status": "已完成"
+  },
+  {
+    "id": 1399,
+    "mediaType": "tv",
+    "title": "权力的游戏",
+    "originalTitle": "Game of Thrones",
+    "poster": "https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZl1O1d9Y.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/suopoADq0k8YZr4dQXcU6p8bD4x.jpg",
+    "year": "2011",
+    "progress": 4,
+    "total": 73,
+    "genres": ["剧情", "奇幻", "冒险"],
+    "status": "追更中"
+  },
+  {
+    "id": 1396,
+    "mediaType": "tv",
+    "title": "绝命毒师",
+    "originalTitle": "Breaking Bad",
+    "poster": "https://image.tmdb.org/t/p/w500/ztkUQFLlCFEAo2d8T0H3fRzZ7sT.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+    "year": "2008",
+    "progress": 62,
+    "total": 62,
+    "genres": ["剧情", "犯罪"],
+    "status": "已完成"
+  }
+]

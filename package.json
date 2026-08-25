@@ -1,0 +1,19 @@
+{
+  "name": "moviehome",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "check": "node --check server/server.js && node --check server/database.js && node --check public/app.js && node --check test/api.test.js",
+    "test": "node --test test/api.test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0"
+  }
+}
